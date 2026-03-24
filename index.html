@@ -281,7 +281,7 @@
                 </a>
                 <button
                   class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
-                  data-demo-src="videos/Certify-video.mp4"
+                  data-demo-src="https://drive.google.com/file/d/1Jl4iVPTiB6sVuUi0AkNe1knMCYh1Hxsi/preview"
                   data-demo-title="Certify-Pro Demo"
                   data-demo-key="certify"
                   data-demo-link="https://nazircamara.github.io/Certify-Pro/"
@@ -437,14 +437,12 @@
             <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
                 <div class="video-frame">
-                  <video
-                    class="h-40 w-full object-cover"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    src="videos/Certify-video.mp4"
-                  ></video>
+                  <iframe
+                    class="h-40 w-full"
+                    src="https://drive.google.com/file/d/1Jl4iVPTiB6sVuUi0AkNe1knMCYh1Hxsi/preview"
+                    allow="autoplay"
+                    allowfullscreen
+                  ></iframe>
                 </div>
                 <div class="flex-1">
                   <h3 class="text-xl font-semibold text-white" data-i18n="projectCertifyTitle">
@@ -466,7 +464,7 @@
                   </a>
                   <button
                     class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
-                    data-demo-src="videos/Certify-video.mp4"
+                    data-demo-src="https://drive.google.com/file/d/1Jl4iVPTiB6sVuUi0AkNe1knMCYh1Hxsi/preview"
                     data-demo-title="Certify-Pro Demo"
                     data-demo-key="certify"
                     type="button"
@@ -722,6 +720,11 @@
             controls
             id="demoModalVideo"
           ></video>
+          <iframe
+            class="h-[420px] w-full hidden"
+            id="demoModalIframe"
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="mt-3 flex justify-end">
           <a

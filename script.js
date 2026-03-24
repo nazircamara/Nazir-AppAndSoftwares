@@ -10,6 +10,7 @@ const contactForm = document.getElementById("contactForm");
 const contactName = document.getElementById("contactName");
 const contactEmail = document.getElementById("contactEmail");
 const contactMessage = document.getElementById("contactMessage");
+const modalIframe = document.getElementById("demoModalIframe");
 
 const translations = {
   en: {
@@ -246,9 +247,18 @@ const openModal = (button) => {
   activeDemoButton = button;
 
   modalTitle.textContent = title;
-  modalVideo.src = videoSrc;
-  modalVideo.load();
-  modalVideo.play().catch(() => null);
+  const isEmbed = videoSrc.includes("drive.google.com");
+  if (isEmbed) {
+    modalIframe.src = videoSrc;
+    modalIframe.classList.remove("hidden");
+    modalVideo.classList.add("hidden");
+  } else {
+    modalVideo.src = videoSrc;
+    modalVideo.load();
+    modalVideo.play().catch(() => null);
+    modalVideo.classList.remove("hidden");
+    modalIframe.classList.add("hidden");
+  }
   modalPanel.classList.toggle("demo-modal-mobile", isMobileDemo);
   modalVideo.classList.toggle("demo-video-mobile", isMobileDemo);
 
@@ -271,6 +281,9 @@ const closeModal = () => {
   modalVideo.pause();
   modalVideo.removeAttribute("src");
   modalVideo.load();
+  modalVideo.classList.remove("hidden");
+  modalIframe.src = "";
+  modalIframe.classList.add("hidden");
   modalPanel.classList.remove("demo-modal-mobile");
   modalVideo.classList.remove("demo-video-mobile");
   activeDemoButton = null;
