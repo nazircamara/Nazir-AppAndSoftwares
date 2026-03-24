@@ -593,7 +593,7 @@
                   <div>
                     <p class="text-xs uppercase tracking-[0.2em] text-slate-400" data-i18n="whatsappLabel">WhatsApp</p>
                     <a class="text-white" href="https://wa.me/2206992098">
-                      002206992098
+                      Start WhatsApp Chat
                     </a>
                   </div>
                 </div>
@@ -602,7 +602,7 @@
             <form
               class="glass contact-form rounded-3xl p-6"
               id="contactForm"
-              action="https://formspree.io/f/YOUR_ID_HERE"
+              action="https://script.google.com/macros/s/AKfycbzEb_TRXDqnnf7nrhFnEAw2EFjsbX8Q2zY032vFlInata6CR6PoXtP8rAElROAb2xYp/exec"
               method="POST"
             >
               <h3 class="text-xl font-semibold text-white" data-i18n="formTitle">Send a Message</h3>
@@ -616,7 +616,7 @@
                   <input
                     class="contact-input"
                     id="contactName"
-                    name="full_name"
+                    name="Name"
                     placeholder="Your full name"
                     type="text"
                     required
@@ -628,7 +628,7 @@
                   <input
                     class="contact-input"
                     id="contactEmail"
-                    name="email"
+                    name="Email"
                     placeholder="you@example.com"
                     type="email"
                     required
@@ -640,7 +640,7 @@
                   <select
                     class="contact-input"
                     id="contactSubject"
-                    name="subject"
+                    name="Subject"
                     required
                   >
                     <option value="">Select a subject</option>
@@ -655,7 +655,7 @@
                   <textarea
                     class="contact-input contact-textarea"
                     id="contactMessage"
-                    name="message"
+                    name="Message"
                     placeholder="Tell me about your project goals, timeline, and requirements"
                     required
                   ></textarea>
@@ -739,5 +739,27 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      const _gsForm = document.getElementById('contactForm');
+      _gsForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = _gsForm.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        fetch(_gsForm.action, { method: 'POST', body: new FormData(_gsForm) })
+          .then(function() {
+            alert('Success! Your message has been sent to Nazir.');
+            _gsForm.reset();
+          })
+          .catch(function(err) {
+            alert('Something went wrong. Please try again.');
+            console.error('Form error:', err.message);
+          })
+          .finally(function() {
+            btn.disabled = false;
+            btn.textContent = 'Submit';
+          });
+      });
+    </script>
   </body>
 </html>
