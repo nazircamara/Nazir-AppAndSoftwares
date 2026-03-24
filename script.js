@@ -304,23 +304,3 @@ langToggle?.addEventListener("click", () => {
 
 switchLanguage(localStorage.getItem("siteLanguage") || "en");
 
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const name = contactName?.value.trim() || "";
-  const email = contactEmail?.value.trim() || "";
-  const message = contactMessage?.value.trim() || "";
-
-  const subject = name ? `Portfolio Contact from ${name}` : "Portfolio Contact";
-  const body = [
-    name ? `Name: ${name}` : null,
-    email ? `Email: ${email}` : null,
-    "",
-    message || "No message provided.",
-  ]
-    .filter(Boolean)
-    .join("\n");
-
-  const mailtoUrl = `mailto:nazir.camara@gail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoUrl;
-});

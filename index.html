@@ -599,38 +599,74 @@
                 </div>
               </div>
             </div>
-            <form class="glass rounded-3xl p-6" id="contactForm">
+            <form
+              class="glass contact-form rounded-3xl p-6"
+              id="contactForm"
+              action="https://formspree.io/f/YOUR_ID_HERE"
+              method="POST"
+            >
               <h3 class="text-xl font-semibold text-white" data-i18n="formTitle">Send a Message</h3>
-              <div class="mt-4 grid gap-4">
-                <input
-                  class="w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
-                  data-i18n-placeholder="namePlaceholder"
-                  id="contactName"
-                  name="name"
-                  placeholder="Your name"
-                  type="text"
-                />
-                <input
-                  class="w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
-                  data-i18n-placeholder="emailPlaceholder"
-                  id="contactEmail"
-                  name="email"
-                  placeholder="Email address"
-                  type="email"
-                />
-                <textarea
-                  class="min-h-[140px] w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
-                  data-i18n-placeholder="messagePlaceholder"
-                  id="contactMessage"
-                  name="message"
-                  placeholder="Tell me about your project"
-                ></textarea>
+              <p class="mt-2 text-sm text-slate-300">
+                Share your project details and I will get back to you soon.
+              </p>
+
+              <div class="contact-form-grid mt-5">
+                <label class="contact-field" for="contactName">
+                  <span>Full Name</span>
+                  <input
+                    class="contact-input"
+                    id="contactName"
+                    name="full_name"
+                    placeholder="Your full name"
+                    type="text"
+                    required
+                  />
+                </label>
+
+                <label class="contact-field" for="contactEmail">
+                  <span>Email</span>
+                  <input
+                    class="contact-input"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    type="email"
+                    required
+                  />
+                </label>
+
+                <label class="contact-field contact-field-full" for="contactSubject">
+                  <span>Subject</span>
+                  <select
+                    class="contact-input"
+                    id="contactSubject"
+                    name="subject"
+                    required
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="Land Registry Inquiry">Land Registry Inquiry</option>
+                    <option value="School Software">School Software</option>
+                    <option value="General">General</option>
+                  </select>
+                </label>
+
+                <label class="contact-field contact-field-full" for="contactMessage">
+                  <span>Message</span>
+                  <textarea
+                    class="contact-input contact-textarea"
+                    id="contactMessage"
+                    name="message"
+                    placeholder="Tell me about your project goals, timeline, and requirements"
+                    required
+                  ></textarea>
+                </label>
+
                 <button
-                  class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900"
+                  class="contact-submit"
                   data-i18n="sendButton"
                   type="submit"
                 >
-                  Send Request
+                  Submit
                 </button>
               </div>
             </form>
