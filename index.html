@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Software Distribution Hub</title>
+    <meta
+      name="description"
+      content="Modern one-page software distribution site for community-first apps and tools."
+    />
+    <link rel="icon" href="logo/logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft5mNjV1qZ4Nq0LwWn6bY1Zl5p7z2vZ7fA1b8b7dT5mQm8uKjzJcC2f0pQkY5cZ6+z0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-grid text-slate-200">
+    <header class="sticky top-0 z-50">
+      <nav class="glass border-b border-slate-800/60">
+        <div class="nav-shell mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          <a class="flex items-center gap-3" href="#">
+            <img
+              class="h-10 w-10 rounded-xl"
+              src="logo/logo.png"
+              alt="Nazir Software Hub logo"
+            />
+            <div>
+              <p class="text-sm uppercase tracking-[0.28em] text-slate-400" data-i18n="brandTag">
+                Nazir Hub
+              </p>
+              <p class="text-lg font-semibold text-white" data-i18n="brandTitle">
+                Software Distribution
+              </p>
+            </div>
+          </a>
+          <div
+            class="nav-links hidden items-center gap-8 text-sm font-semibold uppercase tracking-[0.2em] text-slate-300 md:flex"
+          >
+            <a class="hover:text-white" href="#software" data-i18n="navDesktop">Desktop</a>
+            <a class="hover:text-white" href="#apps" data-i18n="navMobile">Mobile</a>
+            <a class="hover:text-white" href="#web" data-i18n="navWeb">Web</a>
+            <a class="hover:text-white" href="#contact" data-i18n="navContact">Contact</a>
+          </div>
+          <button
+            class="neon-ring rounded-full bg-cyan-400/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200"
+            id="langToggle"
+            type="button"
+          >
+            English | العربية
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="relative overflow-hidden">
+      <div class="floating-orb orb-one"></div>
+      <div class="floating-orb orb-two"></div>
+
+      <section class="section-spacing">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 md:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p class="mb-4 text-xs uppercase tracking-[0.4em] text-cyan-300/80" data-i18n="heroTagline">
+              Modern Soft Glassmorphism
+            </p>
+            <h1 class="glow-text text-4xl font-semibold text-white md:text-5xl" data-i18n="heroTitle">
+              Empowering My Community Through Digital Solutions
+            </h1>
+            <p class="mt-4 text-lg text-slate-300" data-i18n="heroDescription">
+              I am a Developer crafting reliable desktop and mobile tools that make
+              learning, administration, and community service simpler and more accessible.
+            </p>
+            <div class="hero-actions mt-6 flex flex-wrap gap-4">
+              <a
+                class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-400/20"
+                href="#apps"
+                data-i18n="heroPrimaryButton"
+              >
+                View Projects
+              </a>
+              <a
+                class="rounded-full border border-cyan-200/40 px-6 py-3 text-sm font-semibold text-cyan-100"
+                href="#contact"
+                data-i18n="heroSecondaryButton"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="glass neon-ring rounded-3xl p-6">
+              <div class="flex items-center justify-between">
+                <span
+                  class="neon-chip rounded-full px-3 py-1 text-xs uppercase tracking-[0.3em]"
+                  data-i18n="liveDemo"
+                >
+                  Live Demo
+                </span>
+                <span class="text-xs text-slate-300" data-i18n="updatedLabel">Updated 2026</span>
+              </div>
+              <h2 class="mt-5 text-2xl font-semibold text-white" data-i18n="featureTitle">
+                Daily Remembrance App
+              </h2>
+              <p class="mt-3 text-sm text-slate-300" data-i18n="featureDescription">
+                A spiritual companion app with authentic daily supplications and Quranic
+                reminders. Lightweight, offline-friendly, and built for Android users.
+              </p>
+              <div class="mt-5 flex items-center gap-3">
+                <span class="neon-chip rounded-full px-3 py-1 text-xs" data-i18n="tagAndroid">
+                  Android
+                </span>
+                <span class="neon-chip rounded-full px-3 py-1 text-xs" data-i18n="tagOffline">Offline</span>
+                <span class="neon-chip rounded-full px-3 py-1 text-xs" data-i18n="tagCommunity">Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing apps-section" id="apps">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <h2 class="text-3xl font-semibold text-white" data-i18n="appsTitle">Apps & Tools</h2>
+              <p class="mt-2 text-slate-300" data-i18n="appsDescription">
+                Live demos, secure downloads, and clear guidance for every release.
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <span
+                class="neon-chip rounded-full px-3 py-1 text-xs uppercase tracking-[0.25em]"
+                data-i18n="chipMobile"
+              >
+                Mobile
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:max-w-md">
+            <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
+              <div class="video-frame mobile-video-frame">
+                <video
+                  class="mobile-preview-video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  src="videos/sonkara-av.mp4"
+                ></video>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-white" data-i18n="projectAthkarTitle">
+                  Daily Remembrance App
+                </h3>
+                <p class="mt-2 text-sm text-slate-300" data-i18n="projectAthkarDescription">
+                  A spiritual companion app with authentic daily supplications and Quranic
+                  reminders. Lightweight, offline-friendly, and built for Android.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <a
+                  class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
+                  href="https://drive.google.com/file/d/1xM_A_ENTvhYnysvCAxPbd0_27d3CI9Lb/view?usp=sharing"
+                  download
+                >
+                  <i class="fa-solid fa-download"></i>
+                  <span data-i18n="downloadButton">Download</span>
+                </a>
+                <button
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  data-demo-src="videos/sonkara-av.mp4"
+                  data-demo-title="Soninke-Adkaar Demo"
+                  data-demo-key="athkar"
+                  data-demo-mobile="true"
+                  type="button"
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span data-i18n="watchButton">Watch Full Video</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing" id="web">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <h2 class="text-3xl font-semibold text-white" data-i18n="webTitle">Web Section</h2>
+              <p class="mt-2 text-slate-300" data-i18n="webDescription">
+                Explore the live websites for all available projects.
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <span
+                class="neon-chip rounded-full px-3 py-1 text-xs uppercase tracking-[0.25em]"
+                data-i18n="chipWeb"
+              >
+                Web
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="glass flex h-full flex-col gap-4 rounded-3xl p-5">
+              <div class="flex items-center gap-3 text-cyan-300">
+                <i class="fa-solid fa-globe text-xl"></i>
+                <h3 class="text-lg font-semibold text-white" data-i18n="projectAthkarTitle">
+                  Daily Remembrance App
+                </h3>
+              </div>
+              <p class="text-sm text-slate-300" data-i18n="projectAthkarDescription">
+                A spiritual companion app with authentic daily supplications and Quranic
+                reminders. Lightweight, offline-friendly, and built for Android.
+              </p>
+              <div class="mt-auto flex flex-col gap-3">
+                <a
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-center text-sm font-semibold text-cyan-100"
+                  href="https://nazircamara.github.io/Soninke-Adkaar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span data-i18n="websiteButton">Website Link</span>
+                </a>
+                <button
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  data-demo-src="videos/sonkara-av.mp4"
+                  data-demo-title="Soninke-Adkaar Demo"
+                  data-demo-key="athkar"
+                  data-demo-link="https://nazircamara.github.io/Soninke-Adkaar/"
+                  data-demo-mobile="true"
+                  type="button"
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span data-i18n="watchButton">Watch Full Video</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass flex h-full flex-col gap-4 rounded-3xl p-5">
+              <div class="flex items-center gap-3 text-cyan-300">
+                <i class="fa-solid fa-globe text-xl"></i>
+                <h3 class="text-lg font-semibold text-white" data-i18n="projectCertifyTitle">
+                  Certificate Generator
+                </h3>
+              </div>
+              <p class="text-sm text-slate-300" data-i18n="projectCertifyDescription">
+                A high-performance, offline tool for generating bulk certificates with
+                precision layouts and multilingual data support.
+              </p>
+              <div class="mt-auto flex flex-col gap-3">
+                <a
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-center text-sm font-semibold text-cyan-100"
+                  href="https://nazircamara.github.io/Certify-Pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span data-i18n="websiteButton">Website Link</span>
+                </a>
+                <button
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  data-demo-src="videos/Certify-video.mp4"
+                  data-demo-title="Certify-Pro Demo"
+                  data-demo-key="certify"
+                  data-demo-link="https://nazircamara.github.io/Certify-Pro/"
+                  type="button"
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span data-i18n="watchButton">Watch Full Video</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass flex h-full flex-col gap-4 rounded-3xl p-5">
+              <div class="flex items-center gap-3 text-cyan-300">
+                <i class="fa-solid fa-globe text-xl"></i>
+                <h3 class="text-lg font-semibold text-white" data-i18n="projectDataEntryTitle">
+                  Data Entry Utility
+                </h3>
+              </div>
+              <p class="text-sm text-slate-300" data-i18n="projectDataEntryDescription">
+                A robust data management tool for schools and local businesses, turning
+                manual record-keeping into fast, validated digital workflows.
+              </p>
+              <div class="mt-auto flex flex-col gap-3">
+                <a
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-center text-sm font-semibold text-cyan-100"
+                  href="https://nazircamara.github.io/Data-Entry/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span data-i18n="websiteButton">Website Link</span>
+                </a>
+                <button
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  data-demo-src="downloads/dataentry-hub-demo.mp4"
+                  data-demo-title="DataEntry Hub Demo"
+                  data-demo-key="dataEntry"
+                  data-demo-link="https://nazircamara.github.io/Data-Entry/"
+                  type="button"
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span data-i18n="watchButton">Watch Full Video</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass flex h-full flex-col gap-4 rounded-3xl p-5">
+              <div class="flex items-center gap-3 text-cyan-300">
+                <i class="fa-solid fa-globe text-xl"></i>
+                <h3 class="text-lg font-semibold text-white" data-i18n="projectRankerTitle">
+                  Gradebook & Ranker
+                </h3>
+              </div>
+              <p class="text-sm text-slate-300" data-i18n="projectRankerDescription">
+                A professional administrative tool designed to digitize and automate
+                student performance tracking for educational institutions.
+              </p>
+              <div class="mt-auto flex flex-col gap-3">
+                <a
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-center text-sm font-semibold text-cyan-100"
+                  href="https://nazircamara.github.io/student-ranking/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span data-i18n="websiteButton">Website Link</span>
+                </a>
+                <button
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  data-demo-src="downloads/cashiqa-pro-demo.mp4"
+                  data-demo-title="Student Ranking Demo"
+                  data-demo-key="ranker"
+                  data-demo-link="https://nazircamara.github.io/student-ranking/"
+                  type="button"
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span data-i18n="watchButton">Watch Full Video</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing software-section" id="software">
+        <div class="section-curve" aria-hidden="true"></div>
+        <div class="section-heading-badge" data-i18n="softwareBadge">Software Section</div>
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
+            <div class="glass rounded-3xl p-6">
+              <h2 class="text-2xl font-semibold text-white" data-i18n="softwareTitle">
+                Software Delivery Focus
+              </h2>
+              <p class="mt-3 text-slate-300" data-i18n="softwareDescription">
+                Each release ships with optimized installers, release notes, and guided
+                onboarding so teams can deploy tools quickly and confidently.
+              </p>
+              <div class="mt-4 grid gap-3 text-sm text-slate-300">
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-shield-halved text-cyan-300"></i>
+                  <span data-i18n="softwarePoint1">
+                    Secure downloads with integrity checks and clear versioning.
+                  </span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-gauge-high text-cyan-300"></i>
+                  <span data-i18n="softwarePoint2">Performance tuning for low-bandwidth environments.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-users-gear text-cyan-300"></i>
+                  <span data-i18n="softwarePoint3">Community-centered support and guided onboarding.</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass rounded-3xl p-6">
+              <h3 class="text-xl font-semibold text-white" data-i18n="releaseTitle">Release Snapshot</h3>
+              <div class="mt-4 grid gap-4 text-sm">
+                <div class="flex items-center justify-between text-slate-300">
+                  <span data-i18n="statApps">Apps Online</span>
+                  <span class="text-white">1</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-300">
+                  <span data-i18n="statInstallers">Active Installers</span>
+                  <span class="text-white">3</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-300">
+                  <span data-i18n="statSupport">Support Windows/Mobile</span>
+                  <span class="text-white" data-i18n="statSupportValue">Yes</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-300">
+                  <span data-i18n="statBeta">Community Beta</span>
+                  <span class="text-white" data-i18n="statBetaValue">Open</span>
+                </div>
+              </div>
+              <a
+                class="mt-6 inline-flex items-center gap-2 rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                href="#contact"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+                <span data-i18n="requestAccess">Request Early Access</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="text-xl font-semibold text-white" data-i18n="softwareToolsTitle">
+              Software Tools
+            </h3>
+            <p class="mt-2 text-sm text-slate-300" data-i18n="softwareToolsDescription">
+              Desktop and utility software packages available for download and live demo preview.
+            </p>
+
+            <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
+                <div class="video-frame">
+                  <video
+                    class="h-40 w-full object-cover"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="videos/Certify-video.mp4"
+                  ></video>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-semibold text-white" data-i18n="projectCertifyTitle">
+                    Certificate Generator
+                  </h3>
+                  <p class="mt-2 text-sm text-slate-300" data-i18n="projectCertifyDescription">
+                    A high-performance, offline tool for generating bulk certificates with
+                    precision layouts and multilingual data support.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <a
+                    class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
+                    href="https://drive.google.com/file/d/11Qjg0O1h5-8coE01o3Lrb5k5BVaSxNJX/view?usp=sharing"
+                    download
+                  >
+                    <i class="fa-solid fa-download"></i>
+                    <span data-i18n="downloadButton">Download</span>
+                  </a>
+                  <button
+                    class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                    data-demo-src="videos/Certify-video.mp4"
+                    data-demo-title="Certify-Pro Demo"
+                    data-demo-key="certify"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                    <span data-i18n="watchButton">Watch Full Video</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
+                <div class="video-frame">
+                  <video
+                    class="h-40 w-full object-cover"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="downloads/dataentry-hub-demo.mp4"
+                  ></video>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-semibold text-white" data-i18n="projectDataEntryTitle">
+                    Data Entry Utility
+                  </h3>
+                  <p class="mt-2 text-sm text-slate-300" data-i18n="projectDataEntryDescription">
+                    A robust data management tool for schools and local businesses, turning
+                    manual record-keeping into fast, validated digital workflows.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <a
+                    class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
+                    href="https://drive.google.com/file/d/1AudxbvDnD1mIzPPzKEjcTkPOIN1VrD3g/view?usp=sharing"
+                    download
+                  >
+                    <i class="fa-solid fa-download"></i>
+                    <span data-i18n="downloadButton">Download</span>
+                  </a>
+                  <button
+                    class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                    data-demo-src="downloads/dataentry-hub-demo.mp4"
+                    data-demo-title="DataEntry Hub Demo"
+                    data-demo-key="dataEntry"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                    <span data-i18n="watchButton">Watch Full Video</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
+                <div class="video-frame">
+                  <video
+                    class="h-40 w-full object-cover"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="downloads/cashiqa-pro-demo.mp4"
+                  ></video>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-semibold text-white" data-i18n="projectRankerTitle">
+                    Gradebook & Ranker
+                  </h3>
+                  <p class="mt-2 text-sm text-slate-300" data-i18n="projectRankerDescription">
+                    A professional administrative tool designed to digitize and automate
+                    student performance tracking for educational institutions.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <a
+                    class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
+                    href="downloads/cashiqa-pro.exe"
+                    download
+                  >
+                    <i class="fa-solid fa-download"></i>
+                    <span data-i18n="downloadButton">Download</span>
+                  </a>
+                  <button
+                    class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+                    data-demo-src="downloads/cashiqa-pro-demo.mp4"
+                    data-demo-title="Student Ranking Demo"
+                    data-demo-key="ranker"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                    <span data-i18n="watchButton">Watch Full Video</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing" id="contact">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <h2 class="text-3xl font-semibold text-white" data-i18n="contactTitle">Contact</h2>
+              <p class="mt-3 text-slate-300" data-i18n="contactDescription">
+                Ready to collaborate? Reach out for custom deployments, training, or
+                community initiatives.
+              </p>
+              <div class="mt-6 grid gap-4 text-sm text-slate-300">
+                <div class="glass flex items-center gap-3 rounded-2xl p-4">
+                  <i class="fa-solid fa-envelope text-cyan-300"></i>
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400" data-i18n="emailLabel">Email</p>
+                    <a class="text-white" href="mailto:nazir.camara@gail.com">
+                      nazir.camara@gail.com
+                    </a>
+                  </div>
+                </div>
+                <div class="glass flex items-center gap-3 rounded-2xl p-4">
+                  <img
+                    class="h-5 w-5 object-contain"
+                    src="images/whatsapp-icon.png"
+                    alt="WhatsApp"
+                  />
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400" data-i18n="whatsappLabel">WhatsApp</p>
+                    <a class="text-white" href="https://wa.me/2206992098">
+                      002206992098
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="glass rounded-3xl p-6" id="contactForm">
+              <h3 class="text-xl font-semibold text-white" data-i18n="formTitle">Send a Message</h3>
+              <div class="mt-4 grid gap-4">
+                <input
+                  class="w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
+                  data-i18n-placeholder="namePlaceholder"
+                  id="contactName"
+                  name="name"
+                  placeholder="Your name"
+                  type="text"
+                />
+                <input
+                  class="w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
+                  data-i18n-placeholder="emailPlaceholder"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="Email address"
+                  type="email"
+                />
+                <textarea
+                  class="min-h-[140px] w-full rounded-xl border border-slate-700/60 bg-slate-900/70 px-4 py-3 text-sm text-white"
+                  data-i18n-placeholder="messagePlaceholder"
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Tell me about your project"
+                ></textarea>
+                <button
+                  class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900"
+                  data-i18n="sendButton"
+                  type="submit"
+                >
+                  Send Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/70 py-10">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 text-sm text-slate-400">
+        <span data-i18n="footerCopyright">© 2026 Nazir Software Hub. All rights reserved.</span>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-white" href="https://wa.me/2206992098">
+            <img
+              class="inline-block h-4 w-4 object-contain"
+              src="images/whatsapp-icon.png"
+              alt="WhatsApp"
+            />
+            <span data-i18n="whatsappLabel">WhatsApp</span>
+          </a>
+          <a class="hover:text-white" href="#contact">
+            <i class="fa-solid fa-link"></i>
+            <span data-i18n="portfolioLabel">Portfolio</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 px-4 transition-all duration-200 modal-hidden"
+      id="demoModal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="glass w-full max-w-4xl rounded-3xl p-4 transition-all duration-200"
+        id="demoModalPanel"
+      >
+        <div class="flex items-center justify-between border-b border-slate-700/60 pb-3">
+          <h4 class="text-lg font-semibold text-white" id="demoModalTitle" data-i18n="modalTitleDefault">Full Demo</h4>
+          <button
+            class="rounded-full border border-slate-700/60 px-3 py-1 text-sm text-slate-200"
+            data-modal-close
+            data-i18n="closeButton"
+            type="button"
+          >
+            Close
+          </button>
+        </div>
+        <div class="mt-4 video-frame">
+          <video
+            class="h-[420px] w-full object-cover"
+            controls
+            id="demoModalVideo"
+          ></video>
+        </div>
+        <div class="mt-3 flex justify-end">
+          <a
+            class="hidden rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
+            href="#"
+            id="demoModalLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="openProjectButton"
+          >
+            Open Project Website
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
