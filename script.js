@@ -45,6 +45,9 @@ const translations = {
       projectAthkarTitle: "Daily Remembrance App",
       projectAthkarDescription:
         "A spiritual companion app with authentic daily supplications and Quranic reminders. Lightweight, offline-friendly, and built for Android.",
+      projectSalliTitle: "Salli Sorro",
+      projectSalliDescription:
+        "Experience the offline App with Salli Sorro. Featuring high-quality audio recitations, word-by-word playback, and a seamless bilingual interface, this app is your trustworthy helper for prayer and memorization.",
       projectCertifyTitle: "Certificate Generator",
       projectCertifyDescription:
         "A high-performance, offline tool for generating bulk certificates with precision layouts and multilingual data support.",
@@ -132,6 +135,9 @@ const translations = {
       projectAthkarTitle: "تطبيق الأذكار اليومية",
       projectAthkarDescription:
         "تطبيق روحاني للأذكار اليومية والتذكيرات القرآنية، خفيف وعملي ويعمل دون اتصال على أندرويد.",
+      projectSalliTitle: "سالي سور",
+      projectSalliDescription:
+        "اختبر تطبيق Salli Sorro دون اتصال. يتميز بتلاوات صوتية عالية الجودة وتشغيل كلمة بكلمة وواجهة ثنائية اللغة سلسة، وهذا التطبيق هو مساعدك الموثوق في الصلاة والحفظ.",
       projectCertifyTitle: "برنامج استخراج الشهادات",
       projectCertifyDescription:
         "أداة عالية الأداء لاستخراج الشهادات بالجملة دون اتصال مع تنسيقات دقيقة ودعم متعدد اللغات.",

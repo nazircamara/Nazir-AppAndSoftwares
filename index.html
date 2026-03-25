@@ -18,7 +18,8 @@
     />
     <meta property="og:url" content="https://nazircamara.github.io/Nazir-AppAndSoftwares/" />
     <meta property="og:image" content="https://nazircamara.github.io/Nazir-AppAndSoftwares/logo/logo.png" />
-    <link rel="icon" href="logo/logo.png" type="image/png" />
+      <link rel="icon" type="image/png" sizes="48x48" href="image/logo1.png">
+      <link rel="shortcut icon" href="image/logo1.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -200,7 +201,16 @@
             </article>
             <article class="glass flex h-full flex-col gap-4 rounded-3xl p-4">
               <div class="video-frame mobile-video-frame bg-slate-800/50 flex items-center justify-center">
-                <span class="text-slate-400 text-sm">Video coming soon</span>
+                <div style="width:270px; height:480px; max-width:100%; overflow:hidden; border-radius:0.75rem; background:#222; display:flex; align-items:center; justify-content:center;">
+                  <video
+                    style="width:270px; height:480px; border-radius:0.75rem; background:#222;"
+                    controls
+                    title="Salli Sorro Demo Video"
+                  >
+                    <source src="videos/salli-sorro.mp4" type="video/mp4">
+                    If you see this message, the video file videos/salli-sorro.mp4 could not be loaded. Please check the file path and ensure the video exists in the videos folder.
+                  </video>
+                </div>
               </div>
               <div class="flex-1">
                 <h3 class="text-xl font-semibold text-white" data-i18n="projectSalliTitle">
@@ -219,14 +229,16 @@
                   <i class="fa-solid fa-download"></i>
                   <span data-i18n="downloadButton">Download</span>
                 </a>
-                <button
-                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100 opacity-50 cursor-not-allowed"
-                  disabled
+                <a
+                  class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100 flex items-center justify-center gap-2"
+                  href="videos/salli-sorro.mp4"
+                  target="_blank"
+                  rel="noopener"
                   type="button"
                 >
                   <i class="fa-solid fa-play"></i>
                   <span data-i18n="watchButton">Watch Full Video</span>
-                </button>
+                </a>
               </div>
             </article>
           </div>
@@ -485,6 +497,7 @@
                   </p>
                 </div>
                 <div class="flex flex-col gap-3">
+                  <!--
                   <a
                     class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
                     href="https://drive.google.com/file/d/11Qjg0O1h5-8coE01o3Lrb5k5BVaSxNJX/view?usp=sharing"
@@ -493,6 +506,7 @@
                     <i class="fa-solid fa-download"></i>
                     <span data-i18n="downloadButton">Download</span>
                   </a>
+                  -->
                   <button
                     class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
                     data-demo-src="https://drive.google.com/file/d/1MEDswCkXfOpn59Fe_ZxmeIelXid4iuN2/preview"
@@ -527,6 +541,7 @@
                   </p>
                 </div>
                 <div class="flex flex-col gap-3">
+                  <!--
                   <a
                     class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
                     href="https://drive.google.com/file/d/1AudxbvDnD1mIzPPzKEjcTkPOIN1VrD3g/view?usp=sharing"
@@ -535,6 +550,7 @@
                     <i class="fa-solid fa-download"></i>
                     <span data-i18n="downloadButton">Download</span>
                   </a>
+                  -->
                   <button
                     class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
                     data-demo-src="downloads/dataentry-hub-demo.mp4"
@@ -569,6 +585,7 @@
                   </p>
                 </div>
                 <div class="flex flex-col gap-3">
+                  <!--
                   <a
                     class="rounded-full bg-cyan-400 px-4 py-2 text-center text-sm font-semibold text-slate-900"
                     href="downloads/cashiqa-pro.exe"
@@ -577,6 +594,7 @@
                     <i class="fa-solid fa-download"></i>
                     <span data-i18n="downloadButton">Download</span>
                   </a>
+                  -->
                   <button
                     class="rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100"
                     data-demo-src="downloads/cashiqa-pro-demo.mp4"
