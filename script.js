@@ -57,6 +57,14 @@ const translations = {
       projectRankerTitle: "Gradebook & Ranker",
       projectRankerDescription:
         "A professional administrative tool designed to digitize and automate student performance tracking for educational institutions.",
+      projectSoxonaTitle: "Sheikh Soxona Archive",
+      projectSoxonaDescription:
+        "An online Islamic lecture and audio library documenting the teachings, audio recordings, and lessons of Sheikh Soxona, organized across curated categories with instant streaming.",
+      projectSoxonaButton: "Launch Website",
+      projectWajiboxTitle: "Wajibox",
+      projectWajiboxDescription:
+        "A modern bilingual school workspace and homework management platform for students and teachers, featuring interactive assignments, role switching, and automated assessments.",
+      projectWajiboxButton: "Launch Web App",
       downloadButton: "Download",
       websiteButton: "Website Link",
       watchButton: "Watch Full Video",
@@ -147,6 +155,14 @@ const translations = {
       projectRankerTitle: "نظام إدارة و ترتيب الدرجات",
       projectRankerDescription:
         "أداة إدارية احترافية لرقمنة وأتمتة تتبع أداء الطلاب في المؤسسات التعليمية.",
+      projectSoxonaTitle: "مكتبة الشيخ محمد سوقونا",
+      projectSoxonaDescription:
+        "منصة رقمية ومكتبة صوتية إسلامية توثق دروس ومحاضرات وتسجيلات الشيخ سوخونا الصوتية، منظمة في أقسام ميسرة مع إمكانية الاستماع المباشر.",
+      projectSoxonaButton: "زيارة الموقع",
+      projectWajiboxTitle: "واجبي بوكس",
+      projectWajiboxDescription:
+        "منصة تعليمية ثنائية اللغة لإدارة الواجبات والتمارين المدرسية للطلاب والمعلمين، تدعم التقييم التلقائي والتبديل السلس بين واجهات المستخدم.",
+      projectWajiboxButton: "فتح التطبيق",
       downloadButton: "تنزيل",
       websiteButton: "رابط الموقع",
       watchButton: "مشاهدة الفيديو الكامل",
@@ -322,4 +338,3 @@ langToggle?.addEventListener("click", () => {
 });
 
 switchLanguage(localStorage.getItem("siteLanguage") || "en");
-
