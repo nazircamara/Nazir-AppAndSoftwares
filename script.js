@@ -15,7 +15,7 @@ const modalIframe = document.getElementById("demoModalIframe");
 const translations = {
   en: {
     texts: {
-      brandTag: "Nazir Hub",
+      brandTag: "Nazir",
       brandTitle: "Software Distribution",
       navDesktop: "Desktop Apps",
       navMobile: "Mobile Apps",
