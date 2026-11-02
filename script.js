@@ -65,6 +65,12 @@ const translations = {
       projectWajiboxDescription:
         "A modern bilingual school workspace and homework management platform for students and teachers, featuring interactive assignments, role switching, and automated assessments.",
       projectWajiboxButton: "Launch Web App",
+      projectNkitaabuTitle: "Soninka Nkitaabu",
+      projectNkitaabuBadge: "Web App",
+      projectNkitaabuStatus: "Live",
+      projectNkitaabuDescription:
+        "An online literary and educational book marketplace dedicated to preserving, publishing, and distributing literature, cultural texts, and learning materials in the Soninke language.",
+      projectNkitaabuButton: "Launch Website",
       downloadButton: "Download",
       websiteButton: "Website Link",
       watchButton: "Watch Full Video",
@@ -163,6 +169,12 @@ const translations = {
       projectWajiboxDescription:
         "منصة تعليمية ثنائية اللغة لإدارة الواجبات والتمارين المدرسية للطلاب والمعلمين، تدعم التقييم التلقائي والتبديل السلس بين واجهات المستخدم.",
       projectWajiboxButton: "فتح التطبيق",
+      projectNkitaabuTitle: "سونينكا نكيتابو",
+      projectNkitaabuBadge: "تطبيق ويب",
+      projectNkitaabuStatus: "مباشر",
+      projectNkitaabuDescription:
+        "منصة رقمية ومكتبة إلكترونية لنشر وتوزيع الكتب والإنتاجات الأدبية والتعليمية باللغة السوننكية، تهدف للحفاظ على التراث الثقافي ونشره.",
+      projectNkitaabuButton: "زيارة الموقع",
       downloadButton: "تنزيل",
       websiteButton: "رابط الموقع",
       watchButton: "مشاهدة الفيديو الكامل",
